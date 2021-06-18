@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src = "index.js"></script>
+    <link href ="style.css" rel ="stylesheet">
+</head>
+<body>
+    <h1>General Knowledge Quiz</h1>
+    <form name="quiz" id="quiz">
+        <!--My first Question-->
+    <ol>
+        <li> 
+    <p class = "questions">What is the world's most populated country?</p>
+</li> 
+    <input type = "radio" id = "mc" name = "question1" value = "USA"> USA<br>
+    <input type = "radio" id = "mc" name = "question1" value = "China"> China<br>
+    <input type = "radio" id = "mc" name = "question1" value = "India"> India<br>
+    <input type = "radio" id = "mc" name = "question1" value = "Russia"> Russia<br>
+        <!--My Second Question-->
+        <li> 
+    <p class = "questions">What name is given to software used to view web pages?</p>
+</li> 
+    <input id = "textbox" type = "text" name = "question2">
+        <!--My Third Question-->
+        <li>
+    <p class = "questions">What is the capital of Wales?</p>
+      </li> 
+    <input type = "radio" id = "mc" name = "question3" value = "Cardiff"> Cardiff<br>
+    <input type = "radio" id = "mc" name = "question3" value = "Edinburgh"> Edinburgh<br>
+    <input type = "radio" id = "mc" name = "question3" value = "Swansea"> Swansea<br> 
+        <!--My fourth Question-->
+        <li>
+    <p class = "questions">What was the age of Joe Biden when he became POTUS ?</p>
+        </li> 
+    <input type = "radio" id = "mc" name = "question4" value = 78> 78<br>
+    <input type = "radio" id = "mc" name = "question4" value = 65> 65<br>
+    <input type = "radio" id = "mc" name = "question4" value = 76> 76<br>
+  <!--My fifth Question-->
+  <li> 
+    <p class = "questions">Who invented JavaScript?</p>
+</li> 
+    <input type = "radio" id = "mc" name = "question5" value = "Brendan Eich"> Brendan Eich<br>
+    <input type = "radio" id = "mc" name = "question5" value = "James Gosling"> James Gosling<br>
+    <input type = "radio" id = "mc" name = "question5" value = "Dean Edwards"> Dean Edwards<br>
+    <input type = "radio" id = "mc" name = "question5" value = "Eric Schmidt"> Eric Schmidt<br>
+    
+</ol>
+    <br><br>
+    <input id = "button" type = "button" value = "Mark Quiz!" onclick = "checkAnswer();">
+    </form>
+   
+    <div id = "after_submit">
+    <p id = "number_correct"></p>
+    <p id = "message"></p>
+    <img id = "picture">
+    </div>
+    
+</body>
+</html>
